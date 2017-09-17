@@ -1,0 +1,76 @@
+<?php
+/**
+ * Configuration
+ *
+ * @library Conf
+ * @author Brad Cornford <me@bradleycornford.co.uk>
+ * @author Matthias Weiß <info@codeandcreate.de>
+ */
+
+$config = [
+  /**
+   * API Key for sfHyperion
+   */
+  'apiKey' => 'dbba40f2c93fd4dd17afd47709932535',
+  /**
+   * Remote server IP address with port number.
+   * Always required.
+   * Default "127.0.0.1".
+   */
+  'serverAddress' => '127.0.0.1',
+
+  /**
+   * Remote server authentication username.
+   * Set to false when unneeded.
+   * Default "false".
+   */
+  'serverUsername' => false,
+
+  /**
+   * Remote server authentication password.
+   * Set to false when unneeded. Default "false".
+   */
+  'serverPassword' => false,
+
+  /**
+   * Hyperion IP address with port number.
+   * Always required.
+   * Default "127.0.0.1:19444".
+   */
+  'hyperionAddress' => '127.0.0.1:19444',
+
+  /**
+   * System service controller.
+   * Always required.
+   * Default "/sbin/initctl", can be "sudo /etc/init.d".
+   */
+  'serverController' => '/sbin/initctl',
+
+  /**
+   * Message display setting.
+   * Set to false to stop status messages from being displayed.
+   * Default "true".
+   */
+  'messageDisplay' => true,
+
+  /**
+   * Overwrite status setting.
+   * Set to true to not show status actions such as turn on / off.
+   * Default "false".
+   */
+  'overwriteStatus' => false,
+
+  /**
+   * Debug mode.
+   * Set to true to allow command debugging to the PHP error log.
+   * Default "false".
+   */
+  'debug' => false,
+
+  /**
+   * Dummy mode.
+   * Set to true to use the Dummy class for debugging the client.
+   * Default "false".
+   */
+  'dummy' => false,
+];
